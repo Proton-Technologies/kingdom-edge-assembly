@@ -1,0 +1,185 @@
+:root {
+    --primary: #d41457;
+    --yellow: #fff20f;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+}
+
+
+p {
+    font-family: 'Inter', sans-serif !important;
+}
+.img-dark{
+    filter: brightness(0.5);
+}
+
+.our-values {
+    margin-top: 30px;
+}
+
+.logo {
+    height: 50px;
+}
+
+.greeting {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    overflow: hidden;
+}
+
+.greeting > div {
+    position: absolute;
+    top: 25%;
+    color: white;
+}
+
+h3 {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.greeting h3 {
+    font-size: 60px;
+}
+
+.greeting .btn-cta {
+    margin: 150px 0;
+}
+
+.values {
+    z-index: 999;
+}
+
+.btn-cta {
+    border: 0;
+    border-radius: 0;
+    width: 60%;
+    height: 50px;
+}
+
+.cards {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.card {
+    border-radius: 0;
+    width: 18rem;
+}
+
+.card .btn-cta {
+    margin: 20px 0;
+}
+
+.card-head {
+    height: 190px;
+    overflow: hidden;
+}
+.card img {
+    border-radius: 0;
+}
+
+.card .btn-cta {
+    height: 40px;
+}
+
+.description-section {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 0 15px;
+    height: max-content;
+
+}
+
+.description-section > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end
+}
+
+.reverse > div {
+    align-items: flex-start;
+}
+
+
+.description-section h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.description-section > img, .description-section-reverse > img{
+    border-radius: 6px;
+    width: 90%;
+    margin: 0 auto;
+    transform: scale(0.8);
+}
+
+#what-we-believe {
+    padding: 30px 15px;
+    background-color: #d41457;
+    color: white;
+
+}
+
+.our-ministries {
+    padding: 30px 0;
+}
+
+footer {
+    padding: 0 10px;
+    box-shadow: 1px 0 2px -1px rgba(0,0,0,0.2);
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+footer > p {
+    margin: auto 0;
+}
+
+
+@media screen and (max-width: 400px){
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards .card {
+        margin: 20px 0;
+    }
+
+    .description-section{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .reverse {
+        flex-direction: column;
+    }
+
+    .description-section div {
+        align-items: center;
+    }
+
+    .description-section h3 {
+        font-size: 24px;
+    }
+
+    .greeting {
+        height: auto;
+    }
+
+    .greeting h3 {
+        font-size: 2rem;
+    }
+
+    .greeting .btn-cta {
+        margin: 20px 0;
+    }
+}
